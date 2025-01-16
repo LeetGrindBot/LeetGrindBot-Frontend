@@ -10,10 +10,10 @@ export default function LogoWithName() {
           alt="Logo"
           width={120}
           height={40}
-          className="size-8 md:size-10 rounded-full object-cover"
+          className="size-8 rounded-full object-cover md:size-10"
         />
       </Link>
-      <h1 className="md:text-lg text-white font-bold">LeetGrindBot</h1>
+      <h1 className="font-bold text-white md:text-lg">LeetGrindBot</h1>
     </div>
   );
 }
