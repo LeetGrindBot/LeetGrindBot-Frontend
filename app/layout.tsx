@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Instrument_Sans } from "next/font/google";
+import Image from "next/image";
 import "./globals.css";
 
 const instrumentSans = Instrument_Sans({
@@ -20,10 +21,15 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className="dark">
-      <body
-        className={`${instrumentSans.className} mx-auto max-w-7xl bg-gray-950`}
-      >
+    <html lang="en" className="dark overflow-x-hidden md:mx-0">
+      <body className={`${instrumentSans.className} bg-black`}>
+        <Image
+          src="/vector-right.png"
+          alt="logo"
+          height={1200}
+          width={1200}
+          className="absolute -top-72 -z-50 h-[1000px] object-cover md:-right-36 md:h-[1400px]"
+        />
         {children}
       </body>
     </html>
