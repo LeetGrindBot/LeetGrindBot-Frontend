@@ -1,6 +1,8 @@
 "use client";
 
+import { FaDiscord } from "react-icons/fa";
 import LogoWithName from "../components/LogoWithName";
+import { StandaloneShineButton } from "../components/ui/StandaloneShineButton";
 
 const navLinks = [
   { href: "#acceuil", label: "Accueil" },
@@ -31,12 +33,12 @@ export default function Navbar() {
 
         {/* Contact button (desktop) */}
         <div className="hidden justify-end md:flex">
-          <a
-            href="#contact"
-            className="cursor-pointer text-gray-100 transition-colors hover:text-white"
+          <StandaloneShineButton
+            className="rounded-full px-4 py-2 text-sm md:px-6 md:py-3 md:text-lg"
+            icon={<FaDiscord className="size-5" />}
           >
-            Accéder à LeetGrindBot
-          </a>
+            Tester LeetGrindBot
+          </StandaloneShineButton>
         </div>
       </div>
     </nav>

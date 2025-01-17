@@ -21,8 +21,15 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className="dark overflow-x-hidden md:mx-0">
+    <html lang="en" className="dark overflow-x-hidden">
       <body className={`${instrumentSans.className} bg-black`}>
+        <Image
+          src="/vector-left.png"
+          alt="logo"
+          height={600}
+          width={600}
+          className="absolute -top-10 left-0"
+        />
         <Image
           src="/vector-right.png"
           alt="logo"
