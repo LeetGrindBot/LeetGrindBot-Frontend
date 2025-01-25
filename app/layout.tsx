@@ -11,7 +11,7 @@ export const metadata: Metadata = {
   title: "LeetGrindBot",
   description: "LeetGrindBot",
   icons: {
-    icon: "/logo.png",
+    icon: "/favicon.ico",
   },
 };
 
