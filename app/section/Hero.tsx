@@ -3,7 +3,7 @@
 import { Swords } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
-import { StandaloneShineButton } from "../components/ui/StandaloneShineButton";
+import { StandaloneShineButton } from "../../components/ui/StandaloneShineButton";
 
 export default function Hero() {
   return (

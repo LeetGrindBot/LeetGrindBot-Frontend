@@ -2,8 +2,8 @@
 
 import Link from "next/link";
 import { FaDiscord } from "react-icons/fa";
+import { StandaloneShineButton } from "../../components/ui/StandaloneShineButton";
 import LogoWithName from "../components/LogoWithName";
-import { StandaloneShineButton } from "../components/ui/StandaloneShineButton";
 
 const navLinks = [
   { href: "#acceuil", label: "Accueil" },
