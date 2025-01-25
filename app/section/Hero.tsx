@@ -30,8 +30,8 @@ export default function Hero() {
         </div>
         <div className="flex justify-center gap-2">
           <Image
-            src="/gutsRage.png"
-            alt="gutsRage"
+            src="/images/gutsRage.png"
+            alt="Guts Rage"
             width={20}
             height={20}
             className="inline-block"

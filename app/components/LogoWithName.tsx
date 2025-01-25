@@ -6,7 +6,7 @@ export default function LogoWithName() {
     <div className="flex items-center gap-2 md:gap-4">
       <Link href="/">
         <Image
-          src="/logo.png"
+          src="/images/logo.png"
           alt="Logo"
           width={120}
           height={40}

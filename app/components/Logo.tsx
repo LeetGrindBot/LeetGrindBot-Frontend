@@ -5,11 +5,11 @@ export default function Logo() {
   return (
     <Link href="/">
       <Image
-        src="/logo.png"
+        src="/images/logo.png"
         alt="Logo"
         width={120}
         height={40}
-        className="size-8 md:size-10 rounded-full"
+        className="size-8 rounded-full md:size-10"
       />
     </Link>
   );

@@ -24,14 +24,14 @@ export default function RootLayout({
     <html lang="en" className="dark overflow-x-hidden">
       <body className={`${instrumentSans.className} bg-black`}>
         <Image
-          src="/vector-left.png"
+          src="/images/vector-left.png"
           alt="logo"
           height={600}
           width={600}
           className="absolute -top-10 left-0 -z-50"
         />
         <Image
-          src="/vector-right.png"
+          src="/images/vector-right.png"
           alt="logo"
           height={1200}
           width={1200}
