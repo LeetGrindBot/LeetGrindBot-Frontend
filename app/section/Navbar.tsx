@@ -1,8 +1,9 @@
 "use client";
 
+import Link from "next/link";
 import { FaDiscord } from "react-icons/fa";
+import { StandaloneShineButton } from "../../components/ui/StandaloneShineButton";
 import LogoWithName from "../components/LogoWithName";
-import { StandaloneShineButton } from "../components/ui/StandaloneShineButton";
 
 const navLinks = [
   { href: "#acceuil", label: "Accueil" },
@@ -13,7 +14,7 @@ const navLinks = [
 
 export default function Navbar() {
   return (
-    <nav className="mt-4 w-full rounded-full border border-white/10 px-8 py-4 backdrop-blur-sm">
+    <nav className="mt-4 w-full rounded-full border border-white/10 px-6 py-4 backdrop-blur-sm">
       <div className="flex items-center justify-between">
         {/* Logo */}
         <LogoWithName />
@@ -33,12 +34,14 @@ export default function Navbar() {
 
         {/* Contact button (desktop) */}
         <div className="hidden justify-end md:flex">
-          <StandaloneShineButton
-            className="rounded-full px-4 py-2 text-sm md:px-6 md:py-3 md:text-lg"
-            icon={<FaDiscord className="size-5" />}
-          >
-            Tester LeetGrindBot
-          </StandaloneShineButton>
+          <Link href="https://discord.gg/y2-empire" target="_blank">
+            <StandaloneShineButton
+              className="rounded-full px-4 py-2 text-sm md:px-6 md:py-3 md:text-lg"
+              icon={<FaDiscord className="size-5" />}
+            >
+              Accéder à LeetGrindBot
+            </StandaloneShineButton>
+          </Link>
         </div>
       </div>
     </nav>

@@ -11,7 +11,7 @@ export const metadata: Metadata = {
   title: "LeetGrindBot",
   description: "LeetGrindBot",
   icons: {
-    icon: "/logo.png",
+    icon: "/favicon.ico",
   },
 };
 
@@ -28,7 +28,7 @@ export default function RootLayout({
           alt="logo"
           height={600}
           width={600}
-          className="absolute -top-10 left-0"
+          className="absolute -top-10 left-0 -z-50"
         />
         <Image
           src="/vector-right.png"
