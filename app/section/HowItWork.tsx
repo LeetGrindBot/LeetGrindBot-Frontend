@@ -2,15 +2,16 @@ import { BellRing, Crown, Handshake, SwordsIcon } from "lucide-react";
 import Image from "next/image";
 import { BentoCard, BentoGrid } from "../../components/ui/bento-grid";
 import AnimatedListDemo from "../components/AnimatedListDemo";
+import Title from "../components/Title";
 
 export default function HowItWork() {
   const cards = [
     {
-      name: "Daily Challenge",
+      name: "Le défi qui change tout",
+      description:
+        "Recçois chaque jour un défi LeetCode et progresse vers l’excellence.",
       className: "col-span-3 md:col-span-1",
       Icon: SwordsIcon,
-      description:
-        "Reçois un défi LeetCode quotidien adapté à ton niveau et à tes objectifs",
       href: "https://discord.gg/y2-empire",
       cta: "Commencer maintenant",
       background: (
@@ -24,11 +25,11 @@ export default function HowItWork() {
       ),
     },
     {
-      name: "Routine quotidienne",
-      className: "col-span-3 md:col-span-2",
-      Icon: BellRing,
+      name: "Une routine pour rester constant",
       description:
         "Un défi LeetCode chaque jour pour progresser et rester constant.",
+      className: "col-span-3 md:col-span-2",
+      Icon: BellRing,
       href: "https://discord.gg/y2-empire",
       cta: "Découvrir",
       background: (
@@ -36,11 +37,10 @@ export default function HowItWork() {
       ),
     },
     {
-      name: "Communauté soudée",
+      name: "Une communauté soudée à tes côtés",
+      description: "Rejoins une communauté bienveillante prête à t'élever.",
       className: "col-span-3 md:col-span-2",
       Icon: Handshake,
-      description:
-        " Une communauté engagée pour vous encourager, vous guider et vous pousser à donner le meilleur de vous-même",
       href: "https://discord.gg/y2-empire",
       cta: "Rejoindre",
       background: (
@@ -63,11 +63,11 @@ export default function HowItWork() {
       ),
     },
     {
-      name: "Résultats concrets",
+      name: "Décroche tes rêves avec méthode",
+      description:
+        "Un chemin structuré vers le succès technique, inspiré des plus grandes entreprises",
       className: "col-span-3 md:col-span-1",
       Icon: Crown,
-      description:
-        "Prépare-toi efficacement aux entretiens techniques grâce à une méthode structurée.",
       href: "https://discord.gg/y2-empire",
       cta: "En savoir plus",
       background: (
@@ -83,7 +83,13 @@ export default function HowItWork() {
   ];
 
   return (
-    <div className="mx-auto my-44 max-w-5xl" id="features">
+    <div className="mx-auto max-w-5xl py-48">
+      <Title
+        smallText="L’énergie d’une communauté"
+        title="Des défis, du soutien, des résultats concrets."
+        className="py-16"
+        id="features"
+      />
       <BentoGrid>
         {cards.map((card, index) => (
           <BentoCard
