@@ -43,7 +43,7 @@ const InfiniteScrollingLogosAnimation = () => {
                   key={alt}
                   src={src}
                   alt={alt}
-                  className="h-5 w-auto flex-none md:h-6"
+                  className="h-5 w-auto flex-none opacity-70 md:h-6"
                 />
               ))}
             </React.Fragment>

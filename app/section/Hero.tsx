@@ -36,7 +36,7 @@ export default function Hero() {
             height={20}
             className="inline-block"
           />
-          <span className="text-gray-400">
+          <span className="text-white/70">
             +900 développeurs déjà motivés !
           </span>
         </div>
