@@ -40,7 +40,7 @@ export const StandaloneShineButton = ({
         )}
       >
         {/* Shine effect */}
-        <span className="ease absolute right-0 -mt-12 h-32 w-8 translate-x-12 rotate-12 transform bg-white opacity-10 transition-all duration-700 group-hover:-translate-x-96 dark:bg-slate-300" />
+        <span className="ease absolute right-0 -mt-12 h-32 w-8 translate-x-12 rotate-12 transform bg-white opacity-10 transition-all duration-700 group-hover:-translate-x-72 dark:bg-slate-700" />
 
         {/* Button content */}
         <span className="relative flex items-center gap-2 text-sm font-semibold tracking-wide">
