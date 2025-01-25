@@ -4,7 +4,7 @@ import { BentoCard, BentoGrid } from "../../components/ui/bento-grid";
 import AnimatedListDemo from "../components/AnimatedListDemo";
 import Title from "../components/Title";
 
-export default function HowItWork() {
+export default function Features() {
   const cards = [
     {
       name: "Le défi qui change tout",
@@ -83,12 +83,11 @@ export default function HowItWork() {
   ];
 
   return (
-    <div className="mx-auto max-w-5xl py-48">
+    <section className="mx-auto my-48 max-w-5xl" id="features">
       <Title
         smallText="L’énergie d’une communauté"
         title="Des défis, du soutien, des résultats concrets."
         className="py-16"
-        id="features"
       />
       <BentoGrid>
         {cards.map((card, index) => (
@@ -104,6 +103,6 @@ export default function HowItWork() {
           />
         ))}
       </BentoGrid>
-    </div>
+    </section>
   );
 }

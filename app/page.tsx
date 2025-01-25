@@ -1,6 +1,6 @@
 import InfiniteScrollingLogosAnimation from "./components/InfiniteScrollingLogosAnimation";
+import Features from "./section/Features";
 import Hero from "./section/Hero";
-import HowItWork from "./section/HowItWork";
 import Navbar from "./section/Navbar";
 
 export default function Page() {
@@ -10,7 +10,7 @@ export default function Page() {
         <Navbar />
         <Hero />
         <InfiniteScrollingLogosAnimation />
-        <HowItWork />
+        <Features />
       </div>
     </div>
   );

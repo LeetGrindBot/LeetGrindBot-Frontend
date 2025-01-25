@@ -25,7 +25,7 @@ const InfiniteScrollingLogosAnimation = () => {
         Les géants tech font confiance à LeetCode. Avec notre bot, c’est à ton
         tour de briller.
       </h2>
-      <div className="relative flex md:overflow-hidden md:before:absolute md:before:left-0 md:before:top-0 md:before:z-10 md:before:h-full md:before:w-10 md:before:bg-gradient-to-r md:before:from-zinc-950 md:before:to-transparent md:before:content-[''] md:after:absolute md:after:right-0 md:after:top-0 md:after:h-full md:after:w-10 md:after:bg-gradient-to-l md:after:from-zinc-950 md:after:to-transparent md:after:content-['']">
+      <div className="relative flex overflow-hidden md:before:absolute md:before:left-0 md:before:top-0 md:before:z-10 md:before:h-full md:before:w-10 md:before:bg-gradient-to-r md:before:from-zinc-950 md:before:to-transparent md:before:content-[''] md:after:absolute md:after:right-0 md:after:top-0 md:after:h-full md:after:w-10 md:after:bg-gradient-to-l md:after:from-zinc-950 md:after:to-transparent md:after:content-['']">
         <motion.div
           transition={{
             duration: 20,
