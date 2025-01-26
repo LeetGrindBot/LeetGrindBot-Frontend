@@ -82,7 +82,7 @@ const ReviewCard = ({
 
 export default function Testimonials() {
   return (
-    <section className="mx-auto mt-20 md:my-48" id="features">
+    <section className="mx-auto mt-20 md:mt-48" id="avis">
       <Title
         smallText="Ils ont osé se lancer"
         title="Laisse-toi inspirer"

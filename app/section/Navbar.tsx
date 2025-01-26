@@ -11,7 +11,7 @@ interface HeaderItem {
 }
 
 const headerList: HeaderItem[] = [
-  { name: "Accueil", id: "home" },
+  { name: "Accueil", id: "/" },
   { name: "Features", id: "features" },
   { name: "Avis", id: "avis" },
   { name: "FAQ", id: "faq" },
