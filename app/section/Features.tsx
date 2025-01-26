@@ -48,22 +48,22 @@ export default function Features() {
           <Image
             src="/images/conv.png"
             alt="Results"
-            width={3000}
-            height={3000}
-            className="absolute inset-0 hidden h-full w-full object-cover opacity-80 sm:block md:w-[200%]"
+            width={1000}
+            height={1000}
+            className="absolute inset-0 -top-6 hidden h-full w-full object-cover opacity-80 sm:block md:w-[200%]"
           />
           <Image
             src="/images/conv_mobile.png"
             alt="Results"
             width={1000}
             height={1000}
-            className="absolute inset-0 top-4 object-cover opacity-90 sm:hidden"
+            className="absolute inset-0 object-cover opacity-90 sm:hidden"
           />
         </>
       ),
     },
     {
-      name: "Décroche tes rêves avec méthode",
+      name: "Décroche tes rêves et bâtis ton avenir",
       description:
         "Un chemin structuré vers le succès technique, inspiré des plus grandes entreprises",
       className: "col-span-3 md:col-span-1",
@@ -83,7 +83,7 @@ export default function Features() {
   ];
 
   return (
-    <section className="mx-auto my-48 max-w-5xl" id="features">
+    <section className="mx-auto mt-20 max-w-5xl md:mt-48" id="features">
       <Title
         smallText="L’énergie d’une communauté"
         title="Des défis, du soutien, des résultats concrets."

@@ -21,7 +21,7 @@ const CompanyLogoData = [
 const InfiniteScrollingLogosAnimation = () => {
   return (
     <div className="container mt-10 p-5 md:mt-16">
-      <h2 className="my-10 text-center text-xs text-white/70 md:my-16 md:text-base">
+      <h2 className="my-10 text-center text-sm text-white/70 md:my-16 md:text-base">
         Les géants tech font confiance à LeetCode. Avec notre bot, c’est à ton
         tour de briller.
       </h2>

@@ -13,9 +13,12 @@ export default function Hero() {
           <span className="bg-[linear-gradient(to_right,#19FB9B,#FB93D0,#FFDD99,#C3F0B2,#2FD8FE)] bg-clip-text text-xs text-transparent sm:text-sm">
             Si tu rêves de réussir tes entretiens tech...
           </span>
-          <span className="inline-flex items-center gap-1 text-sm">
+          <a
+            href="#features"
+            className="inline-flex items-center gap-1 text-sm"
+          >
             Découvrir le bot
-          </span>
+          </a>
         </div>
       </div>
       <div className="mt-8 flex flex-col items-center space-y-8">
@@ -32,9 +35,9 @@ export default function Hero() {
           <Image
             src="/images/gutsRage.png"
             alt="Guts Rage"
-            width={20}
-            height={20}
-            className="inline-block"
+            width={100}
+            height={100}
+            className="inline-block size-5"
           />
           <span className="text-white/70">
             +900 développeurs déjà motivés !
