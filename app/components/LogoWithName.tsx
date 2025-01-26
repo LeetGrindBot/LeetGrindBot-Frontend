@@ -3,8 +3,8 @@ import Link from "next/link";
 
 export default function LogoWithName() {
   return (
-    <div className="flex items-center gap-2 md:gap-4">
-      <Link href="/">
+    <Link href="/">
+      <div className="flex items-center gap-2 md:gap-4">
         <Image
           src="/images/logo.png"
           alt="Logo"
@@ -12,8 +12,8 @@ export default function LogoWithName() {
           height={40}
           className="size-8 rounded-full object-cover md:size-10"
         />
-      </Link>
-      <h1 className="font-bold text-white md:text-lg">LeetGrindBot</h1>
-    </div>
+        <h1 className="font-bold text-white md:text-lg">LeetGrindBot</h1>
+      </div>
+    </Link>
   );
 }
