@@ -12,7 +12,7 @@ export default function CTA() {
           alt="CTA"
           width={1000}
           height={1000}
-          className="absolute top-52 -z-10 w-full object-cover md:-top-10"
+          className="absolute top-52 -z-10 hidden w-full object-cover md:-top-10 md:block"
         />
       </div>
       <div className="relative flex flex-col items-center justify-center gap-4 bg-black/10 py-44 backdrop-blur-sm">
