@@ -42,13 +42,13 @@ const reviews = [
   },
   {
     name: "Ninache",
-    username: "@HimmyD_Morg",
+    username: "@ninache",
     body: "LeetGrind utilise la gamification de façon intelligente pour transformer les défis LeetCode en une routine motivante. C’est un excellent moyen de rester constant tout en rendant l’apprentissage plus ludique !",
     img: "/images/testimonials/ninache.png",
   },
   {
     name: "Morgan 🧑🏿‍💻",
-    username: "@ninhache",
+    username: "@HimmyD_Morg",
     body: "Grâce à LeetGrindBot, j’ai trouvé un objectif clair : améliorer ma logique et viser le podium. La compétition saine et le soutien de la communauté m’ont poussé à persévérer. Je recommande ce bot à 100% !",
     img: "/images/testimonials/morg.jpg",
   },
