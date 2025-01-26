@@ -1,4 +1,5 @@
 "use client";
+import FadeIn from "@/components/animations/FadeIn";
 import { motion } from "motion/react";
 import Image from "next/image";
 import React from "react";
@@ -21,34 +22,40 @@ const CompanyLogoData = [
 const InfiniteScrollingLogosAnimation = () => {
   return (
     <div className="container mt-10 p-5 md:mt-16">
-      <h2 className="my-10 text-center text-sm text-white/70 md:my-16 md:text-base">
-        Les géants tech font confiance à LeetCode. Avec notre bot, c’est à ton
-        tour de briller.
-      </h2>
+      <FadeIn delay={2.1}>
+        <h2 className="my-10 text-center text-sm text-white/70 md:my-16 md:text-base">
+          Les géants tech font confiance à LeetCode. Avec notre bot, c’est à ton
+          tour de briller.
+        </h2>
+      </FadeIn>
       <div className="relative flex overflow-hidden md:before:absolute md:before:left-0 md:before:top-0 md:before:z-10 md:before:h-full md:before:w-10 md:before:bg-gradient-to-r md:before:from-zinc-950 md:before:to-transparent md:before:content-[''] md:after:absolute md:after:right-0 md:after:top-0 md:after:h-full md:after:w-10 md:after:bg-gradient-to-l md:after:from-zinc-950 md:after:to-transparent md:after:content-['']">
-        <motion.div
-          transition={{
-            duration: 20,
-            ease: "linear",
-            repeat: Infinity,
-          }}
-          initial={{ translateX: 0 }}
-          animate={{ translateX: "-50%" }}
-          className="flex flex-none gap-24 pr-24 md:gap-36 md:pr-36"
-        >
-          {[...new Array(2)].fill(0).map((_, index) => (
-            <React.Fragment key={index}>
-              {CompanyLogoData.map(({ src, alt }) => (
-                <Image
-                  key={alt}
-                  src={src}
-                  alt={alt}
-                  className="h-5 w-auto flex-none opacity-70 md:h-6"
-                />
+        <div className="relative flex overflow-hidden md:before:absolute md:before:left-0 md:before:top-0 md:before:z-10 md:before:h-full md:before:w-10 md:before:bg-gradient-to-r md:before:from-zinc-950 md:before:to-transparent md:before:content-[''] md:after:absolute md:after:right-0 md:after:top-0 md:after:h-full md:after:w-10 md:after:bg-gradient-to-l md:after:from-zinc-950 md:after:to-transparent md:after:content-['']">
+          <FadeIn delay={2.4}>
+            <motion.div
+              transition={{
+                duration: 20,
+                ease: "linear",
+                repeat: Infinity,
+              }}
+              initial={{ translateX: 0 }}
+              animate={{ translateX: "-50%" }}
+              className="flex flex-none gap-24 pr-24 md:gap-36 md:pr-36"
+            >
+              {[...new Array(2)].fill(0).map((_, index) => (
+                <React.Fragment key={index}>
+                  {CompanyLogoData.map(({ src, alt }) => (
+                    <Image
+                      key={alt}
+                      src={src}
+                      alt={alt}
+                      className="h-5 w-auto flex-none opacity-70 md:h-6"
+                    />
+                  ))}
+                </React.Fragment>
               ))}
-            </React.Fragment>
-          ))}
-        </motion.div>
+            </motion.div>
+          </FadeIn>
+        </div>
       </div>
     </div>
   );
