@@ -2,6 +2,7 @@ import InfiniteScrollingLogosAnimation from "./components/InfiniteScrollingLogos
 import CTA from "./section/CTA";
 import Faq from "./section/Faq";
 import Features from "./section/Features";
+import Footer from "./section/Footer";
 import Hero from "./section/Hero";
 import Navbar from "./section/Navbar";
 import Testimonials from "./section/Testimonials";
@@ -22,6 +23,7 @@ export default function Page() {
         <div className="mx-auto max-w-7xl">
           <Faq />
           <CTA />
+          <Footer />
         </div>
       </div>
     </div>

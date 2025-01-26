@@ -1,6 +1,7 @@
 import { StandaloneShineButton } from "@/components/ui/StandaloneShineButton";
 import { Swords } from "lucide-react";
 import Image from "next/image";
+import Link from "next/link";
 
 export default function CTA() {
   return (
@@ -21,12 +22,14 @@ export default function CTA() {
             visent l’excellence.
           </span>
         </h1>
-        <StandaloneShineButton
-          className="mt-12"
-          icon={<Swords className="size-5" />}
-        >
-          Résous ton premier challenge
-        </StandaloneShineButton>
+        <Link href="https://discord.gg/y2-empire">
+          <StandaloneShineButton
+            className="mt-12"
+            icon={<Swords className="size-5" />}
+          >
+            Résous ton premier challenge
+          </StandaloneShineButton>
+        </Link>
       </div>
     </section>
   );

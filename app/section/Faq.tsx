@@ -44,7 +44,7 @@ export default function Faq() {
     <section className="mx-auto mt-20 md:mt-44" id="faq">
       <Title
         smallText="Questions Fréquemment Posées"
-        title="Tout ce que vous devez savoir"
+        title="Tout ce que tu dois savoir"
         className="py-16"
       />
       <div className="relative mx-auto mt-10 max-w-3xl md:mt-20">
