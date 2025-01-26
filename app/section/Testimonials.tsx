@@ -52,6 +52,12 @@ const reviews = [
     body: "Grâce à LeetGrindBot, j’ai trouvé un objectif clair : améliorer ma logique et viser le podium. La compétition saine et le soutien de la communauté m’ont poussé à persévérer. Je recommande ce bot à 100% !",
     img: "/images/testimonials/morg.jpg",
   },
+  {
+    name: "Monokouma",
+    username: "@Haaxiz",
+    body: "Le bot m'a permis de sortir de ma zone de confort et de me challenger, l'aspect gamification donne envie d'en refaire encore et encore",
+    img: "/images/testimonials/monokouma.jpg",
+  },
 ];
 
 const firstRow = reviews.slice(0, reviews.length / 2);
