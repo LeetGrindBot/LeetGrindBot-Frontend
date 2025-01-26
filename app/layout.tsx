@@ -35,6 +35,16 @@ export const metadata: Metadata = {
     type: "website",
     locale: "fr_FR",
   },
+  twitter: {
+    card: "summary_large_image",
+    creator: "@y2_dev",
+    images: "/images/metadata.png",
+    title:
+      "LeetGrindBot - Un défi LeetCode par jour. Une communauté pour te pousser",
+    description:
+      "Libère ton potentiel avec l’énergie d’une communauté soudée qui te guide vers la réussite.",
+  },
+
   keywords: [
     "LeetCode",
     "LeetGrindBot",
@@ -43,7 +53,13 @@ export const metadata: Metadata = {
     "LeetCode Challenge",
     "y2",
     "y2dev",
-    "y2empire",
+    "y2-dev",
+    "y2 dev",
+    "y2 empire",
+    "y2-empire",
+    "y2 empire dev discord",
+    "y2 empire discord",
+    "grind",
   ],
 };
 
