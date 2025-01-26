@@ -13,12 +13,22 @@ export default function Footer() {
     { href: "#faq", label: "FAQ" },
     {
       href: "https://x.com/y2_dev",
-      label: <FaXTwitter className="h-5 w-5" />,
+      label: (
+        <>
+          <FaXTwitter className="h-5 w-5" />
+          <span className="sr-only">Twitter</span>
+        </>
+      ),
       className: "flex items-center gap-1 text-white/70 ml-4 hover:text-white",
     },
     {
       href: "https://discord.gg/y2-empire",
-      label: <FaDiscord className="h-5 w-5" />,
+      label: (
+        <>
+          <FaDiscord className="h-5 w-5" />
+          <span className="sr-only">Discord</span>
+        </>
+      ),
       className: "flex items-center gap-1 text-white/70 hover:text-white",
     },
   ];
