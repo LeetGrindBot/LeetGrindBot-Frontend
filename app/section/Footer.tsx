@@ -1,3 +1,4 @@
+import FadeOnScroll from "@/components/animations/FadeOnScroll";
 import Image from "next/image";
 import Link from "next/link";
 import { FaDiscord } from "react-icons/fa";
@@ -25,34 +26,42 @@ export default function Footer() {
   return (
     <footer className="border-t border-white/10 bg-black/10 pb-12 pt-4 md:mt-32">
       <div className="flex flex-col items-center justify-between sm:flex-row">
-        <LogoWithName />
+        <FadeOnScroll delay={0.2}>
+          <LogoWithName />
+        </FadeOnScroll>
         <div>
           <div className="mt-12 flex flex-wrap items-center gap-4 text-sm text-white/70 md:text-base">
             {links.map((link, index) => (
-              <Link
-                key={index}
-                href={link.href}
-                className={link.className || "hover:text-white"}
-              >
-                {link.label}
-              </Link>
+              <FadeOnScroll key={index} delay={index * 0.1}>
+                <Link
+                  key={index}
+                  href={link.href}
+                  target="_blank"
+                  className={link.className || "hover:text-white"}
+                >
+                  {link.label}
+                </Link>
+              </FadeOnScroll>
             ))}
           </div>
-          <span className="mt-4 flex items-center justify-end gap-1 text-nowrap">
-            Made by{" "}
-            <Link
-              href="https://x.com/y2_dev"
-              className="flex items-center gap-1 text-white"
-            >
-              y2{" "}
-              <Image
-                src="/images/bat_emoji.png"
-                alt="bat emoji"
-                width={20}
-                height={20}
-              />
-            </Link>
-          </span>
+          <FadeOnScroll delay={0.6}>
+            <span className="mt-4 flex items-center justify-end gap-1 text-nowrap text-white/70">
+              Made by{" "}
+              <Link
+                href="https://x.com/y2_dev"
+                target="_blank"
+                className="flex items-center gap-1 text-white"
+              >
+                y2{" "}
+                <Image
+                  src="/images/bat_emoji.png"
+                  alt="bat emoji"
+                  width={20}
+                  height={20}
+                />
+              </Link>
+            </span>
+          </FadeOnScroll>
         </div>
       </div>
     </footer>

@@ -27,8 +27,8 @@ export default function Navbar() {
   };
 
   return (
-    <FadeDown delay={1.2}>
-      <div className="relative" id="header">
+    <div className="relative" id="header">
+      <FadeDown delay={1.2}>
         <div className="mt-4 flex items-center justify-between rounded-full border border-white/10 px-6 py-4 backdrop-blur-sm lg:mx-7">
           <LogoWithName />
           <div className="hidden items-center gap-20 lg:flex">
@@ -43,12 +43,14 @@ export default function Navbar() {
                 </a>
               ))}
             </div>
-            <StandaloneShineButton
-              className="rounded-full px-6 py-3 text-lg"
-              icon={<FaDiscord className="size-5" />}
-            >
-              Accéder à LeetGrindBot
-            </StandaloneShineButton>{" "}
+            <a href="https://discord.gg/y2-empire" target="_blank">
+              <StandaloneShineButton
+                className="rounded-full px-6 py-3 text-lg"
+                icon={<FaDiscord className="size-5" />}
+              >
+                Accéder à LeetGrindBot
+              </StandaloneShineButton>
+            </a>
           </div>
           <div className="flex items-center lg:hidden">
             <button
@@ -74,38 +76,40 @@ export default function Navbar() {
             </button>
           </div>
         </div>
-        <div
-          className={`top-18 fixed right-0 z-50 h-screen w-full rounded-tl-2xl text-2xl text-white backdrop-blur-xl backdrop-brightness-50 transition-transform duration-500 ease-in-out lg:hidden ${
-            isMenuOpen ? "translate-x-0" : "translate-x-full"
-          }`}
-        >
-          <div className="flex justify-end p-4"></div>
-          <ul className="mx-8 flex flex-col items-center justify-center gap-8 text-center font-normal">
-            {headerList.map((item) => (
-              <li key={item.id} className="mt-4 w-full">
-                <a
-                  href={`#${item.id}`}
-                  onClick={() => {
-                    setIsMenuOpen(!isMenuOpen);
-                    toggleBurger();
-                  }}
-                  className="cursor-pointer transition-all"
-                >
-                  {item.name}
-                </a>
-              </li>
-            ))}
-            <li className="w-full">
+      </FadeDown>
+      <div
+        className={`top-18 fixed right-0 z-50 h-screen w-full rounded-tl-2xl text-2xl text-white backdrop-blur-xl backdrop-brightness-50 transition-transform duration-500 ease-in-out lg:hidden ${
+          isMenuOpen ? "translate-x-0" : "translate-x-full"
+        }`}
+      >
+        <div className="flex justify-end p-4"></div>
+        <ul className="mx-8 flex flex-col items-center justify-center gap-8 text-center font-normal">
+          {headerList.map((item) => (
+            <li key={item.id} className="mt-4 w-full">
+              <a
+                href={`#${item.id}`}
+                onClick={() => {
+                  setIsMenuOpen(!isMenuOpen);
+                  toggleBurger();
+                }}
+                className="cursor-pointer transition-all"
+              >
+                {item.name}
+              </a>
+            </li>
+          ))}
+          <li className="w-full">
+            <a href="https://discord.gg/y2-empire" target="_blank">
               <StandaloneShineButton
-                className="rounded-full px-6 py-3 text-lg"
+                className="px-6 py-3 text-lg"
                 icon={<FaDiscord className="size-5" />}
               >
                 Accéder à LeetGrindBot
               </StandaloneShineButton>
-            </li>
-          </ul>
-        </div>
+            </a>
+          </li>
+        </ul>
       </div>
-    </FadeDown>
+    </div>
   );
 }

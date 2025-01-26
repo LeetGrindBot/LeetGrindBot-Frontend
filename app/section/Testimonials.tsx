@@ -25,7 +25,7 @@ const reviews = [
   {
     name: "Ito Windsor",
     username: "@ItoWindsor",
-    body: "LeetGrind est idéal pour créer une habitude et progresser en data structures etalgorithmes. Avec un classement et une communauté soudée, c’est un incontournable !",
+    body: "LeetGrind est idéal pour créer une habitude et progresser en data structures et algorithmes. Avec un classement et une communauté soudée, c’est un incontournable !",
     img: "/images/testimonials/itowindsor.jpg",
   },
   {
@@ -55,7 +55,7 @@ const reviews = [
   {
     name: "Monokouma",
     username: "@Haaxiz",
-    body: "Le bot m'a permis de sortir de ma zone de confort et de me challenger, l'aspect gamification donne envie d'en refaire encore et encore",
+    body: "Le bot m'a permis de sortir de ma zone de confort et de me challenger, l'aspect gamification donne envie d'en refaire encore et encore.",
     img: "/images/testimonials/monokouma.jpg",
   },
 ];

@@ -2,7 +2,6 @@ import FadeOnScroll from "@/components/animations/FadeOnScroll";
 import { StandaloneShineButton } from "@/components/ui/StandaloneShineButton";
 import { Swords } from "lucide-react";
 import Image from "next/image";
-import Link from "next/link";
 
 export default function CTA() {
   return (
@@ -26,14 +25,14 @@ export default function CTA() {
           </h1>
         </FadeOnScroll>
         <FadeOnScroll delay={0.2}>
-          <Link href="https://discord.gg/y2-empire">
+          <a href="https://discord.gg/y2-empire" target="_blank">
             <StandaloneShineButton
               className="mt-12"
               icon={<Swords className="size-5" />}
             >
               Résous ton premier challenge
             </StandaloneShineButton>
-          </Link>
+          </a>
         </FadeOnScroll>
       </div>
     </section>
