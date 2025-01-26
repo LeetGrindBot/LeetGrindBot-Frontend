@@ -1,4 +1,5 @@
 import InfiniteScrollingLogosAnimation from "./components/InfiniteScrollingLogosAnimation";
+import Faq from "./section/Faq";
 import Features from "./section/Features";
 import Hero from "./section/Hero";
 import Navbar from "./section/Navbar";
@@ -16,6 +17,11 @@ export default function Page() {
         </div>
       </div>
       <Testimonials />
+      <div className="relative mx-7">
+        <div className="mx-auto max-w-7xl">
+          <Faq />
+        </div>
+      </div>
     </div>
   );
 }
