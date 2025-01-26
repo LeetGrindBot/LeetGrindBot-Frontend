@@ -1,4 +1,5 @@
 import FadeIn from "@/components/animations/FadeIn";
+import { Analytics } from "@vercel/analytics/next";
 import type { Metadata } from "next";
 import { Instrument_Sans } from "next/font/google";
 import Image from "next/image";
@@ -9,11 +10,41 @@ const instrumentSans = Instrument_Sans({
 });
 
 export const metadata: Metadata = {
-  title: "LeetGrindBot",
-  description: "LeetGrindBot",
+  metadataBase: new URL("https://leetgrindbot.com"),
+  title:
+    "LeetGrindBot - Un défi LeetCode par jour. Une communauté pour te pousser",
+  description:
+    "Libère ton potentiel avec l’énergie d’une communauté soudée qui te guide vers la réussite.",
   icons: {
     icon: "/favicon.ico",
   },
+  authors: [
+    {
+      name: "y2",
+      url: "https://x.com/y2_dev",
+    },
+  ],
+  openGraph: {
+    title:
+      "LeetGrindBot - Un défi LeetCode par jour. Une communauté pour te pousser",
+    description:
+      "Libère ton potentiel avec l’énergie d’une communauté soudée qui te guide vers la réussite.",
+    url: "https://leetgrindbot.com",
+    siteName: "LeetGrindBot",
+    images: "/images/metadata.png",
+    type: "website",
+    locale: "fr_FR",
+  },
+  keywords: [
+    "LeetCode",
+    "LeetGrindBot",
+    "LeetGrind",
+    "LeetCode Bot",
+    "LeetCode Challenge",
+    "y2",
+    "y2dev",
+    "y2empire",
+  ],
 };
 
 export default function RootLayout({
@@ -24,6 +55,8 @@ export default function RootLayout({
   return (
     <html lang="en" className="dark overflow-x-hidden">
       <body className={`${instrumentSans.className} bg-black`}>
+        <Analytics />
+
         <FadeIn delay={0}>
           <Image
             src="/images/vector-left.png"
