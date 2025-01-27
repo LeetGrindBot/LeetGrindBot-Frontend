@@ -9,7 +9,7 @@ export default function Features() {
     {
       name: "Le défi qui change tout",
       description:
-        "Recçois chaque jour un défi LeetCode et progresse vers l’excellence.",
+        "Reçois chaque jour un défi LeetCode et progresse vers l’excellence.",
       className: "col-span-3 md:col-span-1",
       Icon: SwordsIcon,
       href: "https://discord.gg/y2-empire",
