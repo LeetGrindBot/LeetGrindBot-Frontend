@@ -58,6 +58,12 @@ const reviews = [
     body: "Le bot m'a permis de sortir de ma zone de confort et de me challenger, l'aspect gamification donne envie d'en refaire encore et encore.",
     img: "/images/testimonials/monokouma.jpg",
   },
+  {
+    name: "Allan",
+    username: "@CodeWithAlan",
+    body: "Avec LeetGrindBot j'ai vraiment amélioré ma compréhension des problèmes et ma logique. C'est un outil qui pousse ta motivation à fond et qui à un réel intêret derrière.",
+    img: "/images/testimonials/allan.png",
+  },
 ];
 
 const firstRow = reviews.slice(0, reviews.length / 2);
