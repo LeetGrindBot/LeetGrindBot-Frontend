@@ -11,10 +11,9 @@ const instrumentSans = Instrument_Sans({
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://leetgrindbot.com"),
-  title:
-    "LeetGrindBot - Un défi LeetCode par jour. Une communauté pour te pousser",
+  title: "LeetGrindBot",
   description:
-    "Libère ton potentiel avec l’énergie d’une communauté soudée qui te guide vers la réussite.",
+    "Un défi LeetCode par jour. Une communauté pour te pousser - Libère ton potentiel avec l’énergie d’une communauté soudée qui te guide vers la réussite.",
   icons: {
     icon: "/favicon.ico",
   },
@@ -25,10 +24,9 @@ export const metadata: Metadata = {
     },
   ],
   openGraph: {
-    title:
-      "LeetGrindBot - Un défi LeetCode par jour. Une communauté pour te pousser",
+    title: "LeetGrindBot",
     description:
-      "Libère ton potentiel avec l’énergie d’une communauté soudée qui te guide vers la réussite.",
+      "Un défi LeetCode par jour. Une communauté pour te pousser - Libère ton potentiel avec l’énergie d’une communauté soudée qui te guide vers la réussite.",
     url: "https://leetgrindbot.com",
     siteName: "LeetGrindBot",
     images: "/images/metadata.png",
@@ -39,10 +37,9 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     creator: "@y2_dev",
     images: "/images/metadata.png",
-    title:
-      "LeetGrindBot - Un défi LeetCode par jour. Une communauté pour te pousser",
+    title: "LeetGrindBot",
     description:
-      "Libère ton potentiel avec l’énergie d’une communauté soudée qui te guide vers la réussite.",
+      "Un défi LeetCode par jour. Une communauté pour te pousser - Libère ton potentiel avec l’énergie d’une communauté soudée qui te guide vers la réussite.",
   },
 
   keywords: [
