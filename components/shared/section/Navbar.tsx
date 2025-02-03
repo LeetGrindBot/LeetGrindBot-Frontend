@@ -4,7 +4,7 @@ import FadeDown from "@/components/animations/FadeDown";
 import { StandaloneShineButton } from "@/components/ui/StandaloneShineButton";
 import { useState } from "react";
 import { FaDiscord } from "react-icons/fa";
-import LogoWithName from "../components/LogoWithName";
+import LogoWithName from "../LogoWithName";
 
 interface HeaderItem {
   name: string;

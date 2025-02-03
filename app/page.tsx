@@ -1,11 +1,11 @@
-import InfiniteScrollingLogosAnimation from "./components/InfiniteScrollingLogosAnimation";
-import CTA from "./section/CTA";
-import Faq from "./section/Faq";
-import Features from "./section/Features";
-import Footer from "./section/Footer";
-import Hero from "./section/Hero";
-import Navbar from "./section/Navbar";
-import Testimonials from "./section/Testimonials";
+import CTA from "@/components/shared/section/CTA";
+import Faq from "@/components/shared/section/Faq";
+import Features from "@/components/shared/section/Features";
+import Footer from "@/components/shared/section/Footer";
+import Hero from "@/components/shared/section/Hero";
+import Navbar from "@/components/shared/section/Navbar";
+import Testimonials from "@/components/shared/section/Testimonials";
+import InfiniteScrollingLogosAnimation from "../components/shared/InfiniteScrollingLogosAnimation";
 
 export default function Page() {
   return (

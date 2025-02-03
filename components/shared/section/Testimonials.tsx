@@ -1,7 +1,7 @@
 import { Marquee } from "@/components/ui/marquee";
+import Title from "@/components/ui/Title";
 import { cn } from "@/lib/utils";
 import Image from "next/image";
-import Title from "../components/Title";
 
 const reviews = [
   {

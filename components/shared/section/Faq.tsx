@@ -1,5 +1,5 @@
 import Accordion from "@/components/ui/accordion";
-import Title from "../components/Title";
+import Title from "@/components/ui/Title";
 
 const accordionItems = [
   {

@@ -1,10 +1,10 @@
 "use client";
 
+import FadeUp from "@/components/animations/FadeUp";
+import { StandaloneShineButton } from "@/components/ui/StandaloneShineButton";
 import { Swords } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
-import FadeUp from "../../components/animations/FadeUp";
-import { StandaloneShineButton } from "../../components/ui/StandaloneShineButton";
 
 export default function Hero() {
   return (
