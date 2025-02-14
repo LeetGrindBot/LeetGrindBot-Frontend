@@ -20,6 +20,7 @@ export default function Footer() {
         </>
       ),
       className: "flex items-center gap-1 text-white/70 ml-4 hover:text-white",
+      target: "_blank",
     },
     {
       href: "https://discord.gg/y2-empire",
@@ -30,6 +31,7 @@ export default function Footer() {
         </>
       ),
       className: "flex items-center gap-1 text-white/70 hover:text-white",
+      target: "_blank",
     },
   ];
 
@@ -46,7 +48,7 @@ export default function Footer() {
                 <Link
                   key={index}
                   href={link.href}
-                  target="_blank"
+                  target={link.target}
                   className={link.className || "hover:text-white"}
                 >
                   {link.label}
