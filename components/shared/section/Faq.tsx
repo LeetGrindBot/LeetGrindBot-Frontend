@@ -41,7 +41,7 @@ const accordionItems = [
 
 export default function Faq() {
   return (
-    <section className="mx-auto mt-20 md:mt-44" id="faq">
+    <section className="mx-auto mt-20 min-h-screen md:mt-44" id="faq">
       <Title
         smallText="Questions Fréquemment Posées"
         title="Tout ce que tu dois savoir"
