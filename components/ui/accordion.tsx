@@ -35,7 +35,7 @@ const AccordionItem: React.FC<AccordionItemProps> = ({
   };
 
   const contentVariants: Variants = {
-    collapsed: { opacity: 1 },
+    collapsed: { opacity: 0 },
     expanded: {
       opacity: 1,
       transition: { delay: 0.1 },
@@ -46,7 +46,7 @@ const AccordionItem: React.FC<AccordionItemProps> = ({
     <motion.div
       className="bg-blackbackdrop-blur-sm h-[90px] cursor-pointer select-none overflow-hidden rounded-xl border border-[#9f5cf643] transition-colors duration-300 hover:border-[#9f5cf65b] dark:[box-shadow:0_-20px_80px_-20px_#9f5cf643_inset] sm:h-[70px]"
       variants={cardVariants}
-      initial={false}
+      initial="collapsed"
       animate={isExpanded ? "expanded" : "collapsed"}
       onClick={onToggle}
     >
