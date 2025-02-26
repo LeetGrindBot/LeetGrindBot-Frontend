@@ -23,7 +23,7 @@ export default function Footer() {
       target: "_blank",
     },
     {
-      href: "https://discord.gg/y2-empire",
+      href: "https://discord.gg/kfHVdXhqe3",
       label: (
         <>
           <FaDiscord className="h-5 w-5" />

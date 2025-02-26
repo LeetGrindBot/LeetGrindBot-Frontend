@@ -57,7 +57,7 @@ export default function Hero() {
         </div>
 
         <FadeUp delay={2.6}>
-          <Link href="https://discord.gg/y2-empire" target="_blank">
+          <Link href="https://discord.gg/kfHVdXhqe3" target="_blank">
             <StandaloneShineButton
               className=""
               icon={<Swords className="size-5" />}

@@ -43,7 +43,7 @@ export default function Navbar() {
                 </a>
               ))}
             </div>
-            <a href="https://discord.gg/y2-empire" target="_blank">
+            <a href="https://discord.gg/kfHVdXhqe3" target="_blank">
               <StandaloneShineButton
                 className="rounded-full px-6 py-3 text-lg"
                 icon={<FaDiscord className="size-5" />}
@@ -99,7 +99,7 @@ export default function Navbar() {
             </li>
           ))}
           <li className="w-full">
-            <a href="https://discord.gg/y2-empire" target="_blank">
+            <a href="https://discord.gg/kfHVdXhqe3" target="_blank">
               <StandaloneShineButton
                 className="px-6 py-3 text-lg"
                 icon={<FaDiscord className="size-5" />}

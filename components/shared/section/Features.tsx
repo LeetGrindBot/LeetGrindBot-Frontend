@@ -1,4 +1,4 @@
-import { BentoGrid, BentoCard } from "@/components/ui/bento-grid";
+import { BentoCard, BentoGrid } from "@/components/ui/bento-grid";
 import Title from "@/components/ui/Title";
 import { BellRing, Crown, Handshake, SwordsIcon } from "lucide-react";
 import Image from "next/image";
@@ -12,7 +12,7 @@ export default function Features() {
         "Reçois chaque jour un défi LeetCode et progresse vers l’excellence.",
       className: "col-span-3 md:col-span-1",
       Icon: SwordsIcon,
-      href: "https://discord.gg/y2-empire",
+      href: "https://discord.gg/kfHVdXhqe3",
       cta: "Commencer maintenant",
       background: (
         <Image
@@ -30,7 +30,7 @@ export default function Features() {
         "Un défi LeetCode chaque jour pour progresser et rester constant.",
       className: "col-span-3 md:col-span-2",
       Icon: BellRing,
-      href: "https://discord.gg/y2-empire",
+      href: "https://discord.gg/kfHVdXhqe3",
       cta: "Découvrir",
       background: (
         <AnimatedListDemo className="absolute right-2 top-4 h-[300px] w-full border-none transition-all duration-300 ease-out [mask-image:linear-gradient(to_top,transparent_10%,#000_100%)] group-hover:scale-105" />
@@ -41,7 +41,7 @@ export default function Features() {
       description: "Rejoins une communauté bienveillante prête à t'élever.",
       className: "col-span-3 md:col-span-2",
       Icon: Handshake,
-      href: "https://discord.gg/y2-empire",
+      href: "https://discord.gg/kfHVdXhqe3",
       cta: "Rejoindre",
       background: (
         <>
@@ -68,7 +68,7 @@ export default function Features() {
         "Un chemin structuré vers le succès technique, inspiré des plus grandes entreprises",
       className: "col-span-3 md:col-span-1",
       Icon: Crown,
-      href: "https://discord.gg/y2-empire",
+      href: "https://discord.gg/kfHVdXhqe3",
       cta: "En savoir plus",
       background: (
         <Image

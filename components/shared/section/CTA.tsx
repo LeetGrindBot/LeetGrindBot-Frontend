@@ -25,7 +25,7 @@ export default function CTA() {
           </h1>
         </FadeOnScroll>
         <FadeOnScroll delay={0.2}>
-          <a href="https://discord.gg/y2-empire" target="_blank">
+          <a href="https://discord.gg/kfHVdXhqe3" target="_blank">
             <StandaloneShineButton
               className="mt-12"
               icon={<Swords className="size-5" />}
