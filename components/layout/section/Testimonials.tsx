@@ -1,4 +1,4 @@
-import { Marquee } from "@/components/ui/marquee";
+import { Marquee } from "@/components/layout/marquee";
 import Title from "@/components/ui/Title";
 import { cn } from "@/lib/utils";
 import Image from "next/image";

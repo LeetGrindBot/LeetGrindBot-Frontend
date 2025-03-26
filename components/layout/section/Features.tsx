@@ -1,8 +1,8 @@
-import { BentoCard, BentoGrid } from "@/components/ui/bento-grid";
+import AnimatedListDemo from "@/components/shared/AnimatedListDemo";
 import Title from "@/components/ui/Title";
 import { BellRing, Crown, Handshake, SwordsIcon } from "lucide-react";
 import Image from "next/image";
-import AnimatedListDemo from "../AnimatedListDemo";
+import { BentoCard, BentoGrid } from "../bento-grid";
 
 export default function Features() {
   const cards = [

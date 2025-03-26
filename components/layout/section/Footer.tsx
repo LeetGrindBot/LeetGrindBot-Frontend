@@ -1,9 +1,9 @@
 import FadeOnScroll from "@/components/animations/FadeOnScroll";
+import LogoWithName from "@/components/shared/LogoWithName";
 import Image from "next/image";
 import Link from "next/link";
 import { FaDiscord } from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";
-import LogoWithName from "../LogoWithName";
 
 export default function Footer() {
   const links = [

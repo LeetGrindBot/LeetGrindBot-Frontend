@@ -1,6 +1,6 @@
-import { AnimatedList } from "@/components/ui/animated-list";
 import { cn } from "@/lib/utils";
 import Logo from "./Logo";
+import { AnimatedList } from "../layout/animated-list";
 
 interface Item {
   name: string;
