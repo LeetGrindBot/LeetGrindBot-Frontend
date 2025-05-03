@@ -2,7 +2,7 @@ import FadeOnScroll from "@/components/animations/FadeOnScroll";
 import LogoWithName from "@/components/shared/LogoWithName";
 import Image from "next/image";
 import Link from "next/link";
-import { FaDiscord } from "react-icons/fa";
+import { FaDiscord, FaGithub } from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";
 
 export default function Footer() {
@@ -22,6 +22,18 @@ export default function Footer() {
       className: "flex items-center gap-1 text-white/70 ml-4 hover:text-white",
       target: "_blank",
     },
+    {
+      href: "https://github.com/LeetGrindBot",
+      label: (
+        <>
+          <FaGithub className="h-5 w-5" />
+          <span className="sr-only">Github</span>
+        </>
+      ),
+      className: "flex items-center gap-1 text-white/70 hover:text-white",
+      target: "_blank",
+    },
+
     {
       href: "https://discord.gg/kfHVdXhqe3",
       label: (
